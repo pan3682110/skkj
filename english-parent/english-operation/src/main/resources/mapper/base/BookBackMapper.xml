@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.english.operation.mapper.base.BookBackMapper" >
+  <resultMap id="BaseResultMap" type="org.english.operation.model.po.BookBack" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="book_name" property="bookName" jdbcType="VARCHAR" />
+    <result column="model_name" property="modelName" jdbcType="VARCHAR" />
+    <result column="book_code" property="bookCode" jdbcType="VARCHAR" />
+    <result column="introduce" property="introduce" jdbcType="VARCHAR" />
+    <result column="totalUnitNbr" property="totalunitnbr" jdbcType="INTEGER" />
+    <result column="publisher" property="publisher" jdbcType="VARCHAR" />
+    <result column="book_group_name" property="bookGroupName" jdbcType="VARCHAR" />
+    <result column="group_name" property="groupName" jdbcType="VARCHAR" />
+  </resultMap>
+  <select id="go" resultMap="BaseResultMap">
+  		SELECT * FROM book_back GROUP BY book_group_name;
+  </select>
+</mapper>

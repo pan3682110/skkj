@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.english.operation.mapper.base.WordMapper" >
+  <resultMap id="BaseResultMap" type="org.english.operation.model.po.Word" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="course_id" property="courseId" jdbcType="INTEGER" />
+    <result column="book_id" property="bookId" jdbcType="INTEGER" />
+    <result column="unit_no" property="unitNo" jdbcType="INTEGER" />
+    <result column="spelling" property="spelling" jdbcType="VARCHAR" />
+    <result column="sound_mark_us" property="soundMarkUs" jdbcType="VARCHAR" />
+    <result column="sound_mark_uk" property="soundMarkUk" jdbcType="VARCHAR" />
+    <result column="en_sentence" property="enSentence" jdbcType="VARCHAR" />
+    <result column="meaning" property="meaning" jdbcType="VARCHAR" />
+    <result column="dynamic" property="dynamic" jdbcType="VARCHAR" />
+    <result column="audio_url" property="audioUrl" jdbcType="VARCHAR" />
+    <result column="top_num" property="topNum" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

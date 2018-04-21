@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.english.operation.mapper.base.UserSettingMapper" >
+  <resultMap id="BaseResultMap" type="org.english.operation.model.po.UserSetting" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="voice" property="voice" jdbcType="INTEGER" />
+    <result column="auto_review" property="autoReview" jdbcType="INTEGER" />
+    <result column="word_daoji" property="wordDaoji" jdbcType="INTEGER" />
+    <result column="word_num" property="wordNum" jdbcType="INTEGER" />
+    <result column="word_time" property="wordTime" jdbcType="INTEGER" />
+    <result column="max_word_num" property="maxWordNum" jdbcType="INTEGER" />
+    <result column="right_second" property="rightSecond" jdbcType="INTEGER" />
+    <result column="reverse_recall" property="reverseRecall" jdbcType="INTEGER" />
+    <result column="all_recall" property="allRecall" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>
